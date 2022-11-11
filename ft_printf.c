@@ -11,8 +11,7 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
-#include <assert.h>
+
 static int	ft_format_checker(char c, va_list args)
 {
 	int	count;
@@ -66,10 +65,3 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (j);
 }
-
-/*int main(void)
-{
-	fclose(stdout);
-	int x = ft_printf("%d\n", 5);
-	dprintf(2, "%d", x);
-}*/
